@@ -23,13 +23,12 @@
     padding: 0 40px;
   }
   
-  /* Create four equal columns that sits next to each other */
-  .column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 10px;
-  }
+.column {
+  -ms-flex: 33.33%; /* IE10 */
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 10px;
+}
   
   .column img {
     margin-top: 50px;
@@ -134,10 +133,30 @@
              
         </div>
           </div>
-         </div>
-          <!-- 💁 Include both scripts below to support all browsers! -->
 
-          <!-- Loads <model-viewer> for modern browsers: -->
+            <div id="card">
+            <model-viewer
+              src="beatiary-assets/sturgeon.glb"
+              style="background: linear-gradient(#c7e88e, #ebf5ae)"
+              shadow-intensity="1"
+              camera-controls
+              auto-rotate
+              ar
+            >
+            </model-viewer>
+            <div class="caption">
+              <span>
+             
+                  <h3><i>Silver Sturgeon</i>
+                </h3>
+        
+              </span>
+            </div>
+          </div>
+
+           
+         </div>
+        
         
           <div class="column">   
    <div id="card">
@@ -200,55 +219,8 @@
               </span>
             </div>
           </div>
-          </div>
-          <!-- 💁 Include both scripts below to support all browsers! -->
 
-          <!-- Loads <model-viewer> for modern browsers: -->
-      
-       <div class="column">
-      <div id="card">
-            <model-viewer
-              src="beatiary-assets/tadpole.glb"
-              style="background: linear-gradient(#c7e88e, #ebf5ae)"
-              shadow-intensity="1"
-              camera-controls
-              auto-rotate
-              ar
-            >
-            </model-viewer>
-            <div class="caption">
-              <span>
-                  <h3><i>Tadpole</i>
-                  </h3>
-              </span>
-            </div>
-          </div>
-          
-            
-          
-  
-      
-        <div id="card">
-            <model-viewer
-              src="beatiary-assets/sturgeon.glb"
-              style="background: linear-gradient(#c7e88e, #ebf5ae)"
-              shadow-intensity="1"
-              camera-controls
-              auto-rotate
-              ar
-            >
-            </model-viewer>
-            <div class="caption">
-              <span>
-             
-                  <h3><i>Silver Sturgeon</i>
-                </h3>
-        
-              </span>
-            </div>
-          </div>
-    
-        <div id="card">
+            <div id="card">
             <model-viewer
               src="beatiary-assets/saguaro.glb"
               style="background: linear-gradient(#c7e88e, #ebf5ae)"
@@ -266,8 +238,12 @@
               </span>
             </div>
           </div>
-       </div>
-      
+            
+          </div>
+          <!-- 💁 Include both scripts below to support all browsers! -->
+
+          <!-- Loads <model-viewer> for modern browsers: -->
+ 
       
        <div class="column">
                 <div id="card">
@@ -329,6 +305,25 @@
               </span>
             </div>
           </div>
+
+           <div id="card">
+            <model-viewer
+              src="beatiary-assets/tadpole.glb"
+              style="background: linear-gradient(#c7e88e, #ebf5ae)"
+              shadow-intensity="1"
+              camera-controls
+              auto-rotate
+              ar
+            >
+            </model-viewer>
+            <div class="caption">
+              <span>
+                  <h3><i>Tadpole</i>
+                  </h3>
+              </span>
+            </div>
+          </div>
+         
                 </div>
          
     
